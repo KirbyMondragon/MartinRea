@@ -18,8 +18,8 @@ export const urlimage = "/images/og-image.png"
 export const imagealt = "Rubix Studios Documentation"
 export const twitterhandle = "@RubixStudios"
 
-export const companyname = "Rubix Studios"
-export const companylink = "https://www.rubixstudios.com.au"
+export const companyname = "Martinrea"
+export const companylink = "https://www.martinrea.com/es/"
 
 export const branding = true
 export const rightsidebar = true
