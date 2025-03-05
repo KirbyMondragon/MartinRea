@@ -1,22 +1,27 @@
 import Link from "next/link"
-
 import { PageRoutes } from "@/lib/pageroutes"
 import { buttonVariants } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-2 py-8">
-      <h1 className="text-4xl font-bold mb-4 sm:text-7xl">Martinrea</h1>
-      <h2 className="text-4xl font-bold mb-4 sm:text-7xl">(Documentación de máquinas)</h2>
-      <p className="max-w-[600px] text-foreground mb-8 sm:text-base">
-    Portal confiable para acceder a manuales y guías técnicas de máquinas. Con instrucciones paso a paso y recursos actualizados, la página te ayuda a mantener, reparar y optimizar tus equipos de manera sencilla y eficiente.
-      </p>
+    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-4 py-16 bg-transparent">
+      <h1 className="text-4xl sm:text-7xl font-bold mb-4 animate-bounce">
+        Martinrea
+      </h1>
+      <h2 className="text-3xl sm:text-5xl font-semibold mb-4 text-blue-500">
+        (Documentación de máquinas)
+      </h2>
+  
       <div className="flex items-center gap-5">
         <Link
           href={`/docs${PageRoutes[0].href}`}
-          className={buttonVariants({ className: "px-6", size: "lg" })}
+          className={buttonVariants({
+            className:
+              "px-6 py-3 bg-gray-800 hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200 transition-transform duration-300 transform hover:scale-105 shadow-lg",
+            size: "lg",
+          })}
         >
-          Get Started
+          Ver documentacion
         </Link>
       </div>
     </div>
